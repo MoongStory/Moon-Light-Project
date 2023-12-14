@@ -1,5 +1,23 @@
 <script>
-    var str="1k2k3k4k5";
-    var arr=str.split("k");
-    document.write(arr)
+	// FIXME 들여쓰기 제대로 해주세요
+	var num = 1;
+	var t = "<table border=1>";
+
+	for (var i = 1; i <= 5; i++) {
+		t+= "<tr>";
+		for (var k = 1; k <= 5; k++) {
+			t+= "<td>";
+			t+= num++
+			t+= "</td>";
+		}
+		t+= "</tr>";
+	}
+
+	t+= "</table>"
+
+	console.log(t)
+	document.write(t);
 </script>
+FIXME 전혀 모르겠음
+FIXME 조건문 사용해서 해주세요
+>>>>>>> ffc8f1517ed84d27fd6de84557f8ab6b5157323f
