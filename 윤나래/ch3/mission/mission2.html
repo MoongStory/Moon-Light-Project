@@ -4,7 +4,9 @@
     for(var i=1;i<=5;i++){
         t+="<tr>";
         for(var k=1;k<=5;k++){
-            t+=num++;
+			t += "<td>";
+            t += num++;
+			t += "</td>";
         }
         t+="<tr>";
     }
@@ -12,4 +14,3 @@
     console.log(t);
     document.write(t);
 </script>
-FIXME 표 인식 불가
