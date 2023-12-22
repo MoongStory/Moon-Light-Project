@@ -1,0 +1,18 @@
+<script>
+
+    let table = "<table border ='1'>";   //1
+    let num = 0;                         //2
+    
+    for(let i=1; i<=10; i++){            //3
+        table += "<tr>";
+        for(let j=1; j<=10; j++){        //4
+            num++;
+            table += "<td>"+ num +"</td>";
+        }
+        table += "</tr>";                //5
+    }
+    table += "</table>";               //6
+    document.write(table);             //7
+
+</script>
+
