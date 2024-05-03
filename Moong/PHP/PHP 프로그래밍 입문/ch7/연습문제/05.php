@@ -7,7 +7,14 @@
 </head>
 <body>
 	<?php
-		$table = $_GET["table"];
+		if(isset($_GET["table"]))
+		{
+			$table = $_GET["table"];
+		}
+		else
+		{
+			$table = "default";
+		}
 
 		if($table == "free")
 		{
