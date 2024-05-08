@@ -13,6 +13,8 @@
 	//else $user_name = "test_name";
 ?>
 
+===HEDER START=================================================
+
 <div id="top">
 	<h3>
 		<a href="index.php">MY PAGE HOME</a>
@@ -45,3 +47,5 @@
 	<li><a href="form_board.php">게시판</a></li>
 	</ul>
 </div>
+
+===HEDER END=================================================
