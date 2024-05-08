@@ -1,3 +1,6 @@
+<br>
+<br>
+<br>
 ===FOOTER START=================================================
 <div id="footer_content">
 	<p id="footer_logo">FOOTER LOGO TEST | 테스트</p>
