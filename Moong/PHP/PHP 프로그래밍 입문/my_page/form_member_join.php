@@ -8,12 +8,14 @@
 	<script>
 		function check_id()
 		{
+			// TODO: 아이디 중복 확인 php 페이지 추가.
 			alert("check_id function call test");
 			//window.open("member_check_id.php?id=" + document.member_form.id.value, "IDcheck", "left=700, top=300,width=350, height=200, scrollbars=no, resizable=yes");
 		}
 
 		function check_input()
 		{
+			// TODO: 회원 가입 입력 양식 체크 및 DB에 회원 정보 삽입하는 php 페이지 추가.
 			alert("check_input function call test");
 		}
 
