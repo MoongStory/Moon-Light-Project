@@ -34,7 +34,7 @@
 ?>
 		<li><?=$user_name."(".$user_id.")"?></li>
 		<li><a href="controller_logout.php">로그아웃</a></li>
-		<li><a href="controller_member_info_modify.php">정보수정</a></li>
+		<li><a href="view_member_info_modify.php">정보수정</a></li>
 <?php
 	}
 ?>
