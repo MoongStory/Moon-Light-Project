@@ -8,26 +8,38 @@
 	<script>
 		function login()
 		{
-			alert("login");
+			if(document.form_login.id.value === "")
+			{
+				alert("아이디를 입력해주세요.");
+				document.form_login.id.focus();
+			}
+
+			if(document.form_login.password.value === "")
+			{
+				alert("비밀번호를 입력해주세요.");
+				document.form_login.password.focus();
+			}
+
+			document.form_login.submit();
 		}
 
 		function login_cancle()
 		{
-			alert("login_cancle");
+			location.href = "index.php";
 		}
 	</script>
 </head>
 <body>
 	<header>
-		<?php require "header.php";?>
+		<?php require "view_header.php";?>
 	</header>
 
 	<section>
-		<form name="form_member" method="post" action="member_insert.php">
-			<div class="id">
+		<form name="form_login" method="post" action="controller_login.php">
+			<div class="class_id">
 				아이디 <input type="text" name="id">
 			</div>
-			<div class="password">
+			<div class="class_password">
 				비밀번호 <input type="password" name="password">
 			</div>
 
@@ -39,7 +51,7 @@
 	</section>
 
 	<footer>
-		<?php require "footer.php";?>
+		<?php require "view_footer.php";?>
 	</footer>
 </body>
 </html>
