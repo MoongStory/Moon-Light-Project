@@ -66,7 +66,7 @@
 </head>
 <body>
 	<header>
-		<?php include "header.php";?>
+		<?php require "header.php";?>
 	</header>
 
 	<section>
@@ -106,7 +106,7 @@
 	</section>
 
 	<footer>
-		<?php include "footer.php";?>
+		<?php require "footer.php";?>
 	</footer>
 </body>
 </html>
