@@ -25,16 +25,16 @@
 	if($user_id == "")
 	{
 ?>
-		<li><a href="form_member_join.php">회원가입</a></li>
-		<li><a href="form_login.php">로그인</a></li>
+		<li><a href="view_member_join.php">회원가입</a></li>
+		<li><a href="view_login.php">로그인</a></li>
 <?php
 	}
 	else
 	{
 ?>
 		<li><?=$user_name."(".$user_id.")"?></li>
-		<li><a href="logout.php">로그아웃</a></li>
-		<li><a href="form_member_info_modify.php">정보수정</a></li>
+		<li><a href="controller_logout.php">로그아웃</a></li>
+		<li><a href="controller_member_info_modify.php">정보수정</a></li>
 <?php
 	}
 ?>
@@ -43,8 +43,8 @@
 
 <div id="menu_bar">
 	<ul>
-	<li><a href="form_message.php">쪽지</a></li>
-	<li><a href="form_board.php">게시판</a></li>
+	<li><a href="view_message.php">쪽지</a></li>
+	<li><a href="view_board.php">게시판</a></li>
 	</ul>
 </div>
 

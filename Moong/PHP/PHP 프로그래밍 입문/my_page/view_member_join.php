@@ -15,7 +15,7 @@
 			}
 			else
 			{
-				window.open("member_check_id.php?id=" + document.form_member.id.value.trim(), "IDcheck", "left=700, top=300,width=350, height=200, scrollbars=no, resizable=yes");
+				window.open("model_controller_member_check_id.php?id=" + document.form_member.id.value.trim(), "IDcheck", "left=700, top=300,width=350, height=200, scrollbars=no, resizable=yes");
 			}
 		}
 
@@ -66,12 +66,12 @@
 </head>
 <body>
 	<header>
-		<?php require "header.php";?>
+		<?php require "view_header.php";?>
 	</header>
 
 	<section>
 		<div id="join_box">
-			<form name="form_member" method="post" action="member_insert.php">
+			<form name="form_member" method="post" action="model_controller_member_insert.php">
 				<h2>회원 가입</h2>
 				<div class="form id">
 					<div class="col1">
@@ -106,7 +106,7 @@
 	</section>
 
 	<footer>
-		<?php require "footer.php";?>
+		<?php require "view_footer.php";?>
 	</footer>
 </body>
 </html>
