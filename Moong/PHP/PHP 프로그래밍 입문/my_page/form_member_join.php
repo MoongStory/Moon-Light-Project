@@ -21,8 +21,35 @@
 
 		function check_input()
 		{
-			// TODO: 회원 가입 입력 양식 체크 및 DB에 회원 정보 삽입하는 php 페이지 추가.
-			alert("check_input function call test");
+			if(document.form_member.id.value === "")
+			{
+				alert("아이디를 입력해주세요.");
+				document.form_member.id.focus();
+			}
+			else if(document.form_member.pass.value === "")
+			{
+				alert("비밀번호를 입력해주세요.");
+				document.form_member.pass.focus();
+			}
+			else if(document.form_member.pass_confirm.value === "")
+			{
+				alert("비밀번호를 입력해주세요.");
+				document.form_member.pass_confirm.focus();
+			}
+			else if(document.form_member.pass.value != document.form_member.pass_confirm.value)
+			{
+				alert("비밀번호가 일치하지 않습니다.");
+				document.form_member.pass.value = "";
+				document.form_member.pass_confirm.value = "";
+				document.form_member.pass.focus();
+			}
+			else if(document.form_member.name.value === "")
+			{
+				alert("이름을 입력해주세요.");
+				document.form_member.name.focus();
+			}
+
+			document.form_member.submit();
 		}
 
 		function reset_form()
