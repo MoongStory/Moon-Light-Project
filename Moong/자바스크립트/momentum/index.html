@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<title>Momemtum</title>
+	<link rel="stylesheet" href="CSS/style.css">
+	<title>Momemtum App</title>
 </head>
+
 <body>
-	<script src="app.js"></script>
+	<h2 id="clock">00:00:00.000</h2>
+
+	<form class="hidden" id="login-form">
+		<input type="text" placeholder="input your name">
+		<button>login</button>
+	</form>
+
+	<h1 class="hidden" id="greeting"></h1>
+
+	<div id="quote">
+		<span></span>
+		<br>
+		<span></span>
+	</div>
+
+	<script src="JS/greetings.js"></script>
+	<script src="JS/clock.js"></script>
+	<script src="JS/quotes.js"></script>
 </body>
+
 </html>
