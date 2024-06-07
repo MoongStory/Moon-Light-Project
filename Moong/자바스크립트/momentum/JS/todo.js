@@ -13,9 +13,7 @@ function saveToDoItems() {
 function deleteToDo(event) {
 	const li = event.target.parentNode;
 
-	toDoItems = toDoItems.filter(toDoObj => {
-		return String(toDoObj.id) !== String(li.id);
-	});
+	toDoItems = toDoItems.filter(toDoObj => toDoObj.id !== parseInt(li.id));
 
 	saveToDoItems();
 
