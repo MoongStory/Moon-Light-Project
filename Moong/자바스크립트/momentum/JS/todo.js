@@ -2,7 +2,7 @@ const toDoForm = document.querySelector("#todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.querySelector("#todo-list");
 
-const toDoItems = [];
+let toDoItems = [];
 
 const CONST_STRING_TO_DO_ITEMS = "toDoItems";
 
@@ -49,7 +49,6 @@ toDoForm.addEventListener("submit", handleToDoSubmit);
 const parsedToDoItems = JSON.parse(localStorage.getItem(CONST_STRING_TO_DO_ITEMS));
 
 if (parsedToDoItems !== null) {
-	parsedToDoItems.forEach(element => {
-		console.log("test", element)
-	});
+	toDoItems = parsedToDoItems;
+	parsedToDoItems.forEach(paintToDo);
 }
