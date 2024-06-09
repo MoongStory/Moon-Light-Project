@@ -6,8 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 
+	<!-- React -->
 	<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+	<!-- ReactDOM -->
 	<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+	<!-- React PropTypes -->
+	<script src="https://unpkg.com/prop-types@15.7.2/prop-types.js"></script>
+	<!-- babel -->
 	<script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 
@@ -16,8 +21,7 @@
 </body>
 
 <script type="text/babel">
-	function Btn({text, changeValue}) {
-		console.log(text, "was render");
+	function Btn({text, fontSize = 16}) {
 		return (<button
 			style={{
 				backgroundColor: "tomato",
@@ -25,29 +29,28 @@
 				padding: "10px 20px",
 				border: 0,
 				borderRadius: 10,
+				fontSize,
 			}}
-			onClick={changeValue}
 		>
 			{text}
 		</button>);
 	}
 
-	const MemorizeBtn = React.memo(Btn);
+	Btn.propTypes = {
+		text: PropTypes.string.isRequired,
+		fontSize: PropTypes.number,
+	}
 
 	function App() {
-		const [value, setValue] = React.useState("Save Changes");
-
-		const changeValue = () => setValue("Revert Changes");
-		
 		return (
 			<div>
-				<MemorizeBtn
-					text={value}
-					changeValue={changeValue}
+				<Btn
+					text="Save Changes"
+					fontSize={18}
 				/>
-				<MemorizeBtn
+				<Btn
 					text="Continue"
-					/>
+				/>
 			</div>
 		);
 	}
