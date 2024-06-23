@@ -8,20 +8,21 @@ function App() {
   const onChange = (event) => setTodo(event.target.value);
   const onSubmit = (event) => {
     event.preventDefault();
-    // console.log(toDo);
-	if(toDo === "") {
-		return;
-	}
 
-	setToDos(currentArray => [toDo, ...currentArray]);
-	setTodo("");
-};
+    if (toDo === "") {
+      return;
+    }
 
-console.log(toDos);
+    setToDos((currentArray) => [toDo, ...currentArray]);
+    setTodo("");
+  };
+
+  console.log(toDos);
+  console.log(toDos.map((item, index) => (<li key={index}>{item}</li>)));
 
   return (
     <div>
-	<h1>My To Dos ({toDos.length})</h1>
+      <h1>My To Dos ({toDos.length})</h1>
       <form onSubmit={onSubmit}>
         <input
           onChange={onChange}
@@ -32,6 +33,12 @@ console.log(toDos);
         <br />
         <button>Add To Do</button>
       </form>
+      <hr />
+      <ul>
+        {toDos.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 }
