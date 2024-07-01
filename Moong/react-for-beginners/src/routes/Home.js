@@ -4,6 +4,7 @@ import Movie from "../components/Movie";
 function Home() {
   const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([]);
+
   const getMovies = async () => {
     const json = await (
       await fetch(
@@ -19,8 +20,6 @@ function Home() {
     getMovies();
   }, []);
 
-  console.log(movies);
-
   return (
     <div>
       {loading ? (
@@ -30,6 +29,7 @@ function Home() {
           {movies.map((movie) => (
             <Movie
               key={movie.id}
+			  id={parseInt(movie.id)}
               medium_cover_image={movie.medium_cover_image}
               title={movie.title}
               summary={movie.summary}
