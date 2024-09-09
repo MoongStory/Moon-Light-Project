@@ -7,15 +7,15 @@
 </head>
 <body>
 	<header>
-		<?php include "header.php";?>
+		<?php include "view_header.php";?>
 	</header>
 
 	<section>
-		<?php include "main.php";?>
+		<?php include "view_main.php";?>
 	</section>
 
 	<footer>
-		<?php include "footer.php";?>
+		<?php include "view_footer.php";?>
 	</footer>
 </body>
 </html>
