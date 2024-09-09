@@ -1,0 +1,19 @@
+<script>
+    var greenArr=["교대","방배","강남"];
+    var yellowArr=["미금","정자","수서"];
+
+    greenArr.splice(2,1,"서초","역삼");
+    console.log(greenArr);
+
+    var data1=yellowArr.pop();
+    var data2=yellowArr.shift();
+
+    yellowArr.push(data2);
+    console.log(yellowArr); // 여기가 이상하다는 거에요?
+    //정자.미금으로 나와야 하는데 수서.정자.미금으로 나옴
+
+    yellowArr.unshift(data1);
+    console.log(yellowArr);
+</script>
+QUESTION console 2번째 이상
+ANSWER 뭐가 이상한지 알려주세요. 원래 어떻게 나와야 되는데 어떻게 잘못 나오고 있다 이런 식으로...
