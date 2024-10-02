@@ -31,5 +31,5 @@ if max_value == d:
         max_variable += ", "
     max_variable += "d"
 
-print("최대값을 저장하고 있는 변수[{}]".format(max_variable))
+print(f"최대값을 저장하고 있는 변수[{max_variable}]")
 # region start 최대값을 저장하고 있는 변수를 찾는다.
