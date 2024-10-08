@@ -11,15 +11,15 @@ body {
 
 .status-bar__column {
   width: 33%;
+  display: flex;
+  align-items: center;
 }
 
 .status-bar__column:nth-child(2) {
-  display: flex;
   justify-content: center;
 }
 
 .status-bar__column:last-child {
-  display: flex;
   justify-content: flex-end;
 }
 
@@ -28,8 +28,5 @@ body {
 }
 
 .material-symbols-outlined {
-  margin: 0px 3px;
-  transform: translateY(
-    2px
-  ); /* font-size 관계없이 글자와 아이콘 높이를 맞추는 방법이 있나? */
+  margin: 0px 5px;
 }
