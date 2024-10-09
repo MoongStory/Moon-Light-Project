@@ -17,7 +17,16 @@
         <span class="material-symbols-outlined"> wifi </span>
       </div>
       <div class="status-bar__column">
-        <span>18:43</span>
+        <span>
+          <script>
+            var time = new Date();
+
+            var hours = ("0" + time.getHours()).slice(-2);
+            var minutes = ("0" + time.getMinutes()).slice(-2);
+
+            document.write(hours + ":" + minutes);
+          </script>
+        </span>
       </div>
       <div class="status-bar__column">
         <span class="material-symbols-outlined"> lock_reset </span>
@@ -33,7 +42,8 @@
     <header class="welcome-header">
       <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
       <p class="welcome-header__text">
-        If you have a Kokoa Account, log in with your email or phone number.
+        If you have a Kokoa Account,<br />log in with your email or phone
+        number.
       </p>
     </header>
 
@@ -41,7 +51,7 @@
       <input type="text" placeholder="Email or phone number" />
       <input type="password" placeholder="Password" />
       <input type="submit" value="Log In" />
-      <button>Sign Up</button>
+      <input type="button" value="Sign Up" />
       <a href="#">Find Kokoa Account or Password</a>
     </form>
   </body>
