@@ -19,39 +19,41 @@
   opacity: 0.6;
 }
 
-#login-form {
+.login-form {
   display: flex;
   flex-direction: column;
   margin: 0px 30px;
 }
 
-#login-form input {
+.login-form *:not(a) {
   padding: 15px 0px;
   border: none;
   font-size: 18px;
   margin-bottom: 25px;
 }
 
-#login-form input:not([type="submit"]) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+/* QUESTION : 왜 ".login-form__input" 이건 안되고 "input.login-form__input" 이렇게 해야 적용 되는지? */
+input.login-form__input {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
   transition: border-color 0.3s ease-in-out;
 }
 
-#login-form input::placeholder {
+.login-form__input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-#login-form input:focus {
+.login-form__input:focus {
   border-color: var(--yellow);
 }
-#login-form input[type="submit"] {
+
+.login-form__button {
   background-color: var(--yellow);
   cursor: pointer;
   padding: 20px 0px;
   border-radius: 5px;
 }
 
-#login-form a {
+.login-form a {
   text-align: center;
   text-decoration: none;
   color: inherit;

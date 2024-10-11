@@ -47,16 +47,23 @@
       </p>
     </header>
 
-    <form action="friends.html" method="get" id="login-form">
+    <form class="login-form" action="friends.html" method="get">
       <input
         required
+        class="login-form__input"
         name="username"
         type="text"
         placeholder="Email or phone number"
       />
-      <input required name="password" type="password" placeholder="Password" />
-      <input type="submit" value="Log In" />
-      <input type="button" value="Sign Up" />
+      <input
+        required
+        class="login-form__input"
+        name="password"
+        type="password"
+        placeholder="Password"
+      />
+      <button class="login-form__button" type="submit">Log In</button>
+      <button class="login-form__button" type="button">Sign Up</button>
       <a href="#">Find Kokoa Account or Password</a>
     </form>
   </body>
