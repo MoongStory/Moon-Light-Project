@@ -1,1 +1,99 @@
-hello this is friends.
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends - Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No service</span>
+        <span
+          class="material-symbols-outlined status-bar__material-symbols-outlined"
+        >
+          wifi
+        </span>
+      </div>
+      <div class="status-bar__column">
+        <span>
+          <script>
+            var time = new Date();
+
+            var hours = ("0" + time.getHours()).slice(-2);
+            var minutes = ("0" + time.getMinutes()).slice(-2);
+
+            document.write(hours + ":" + minutes);
+          </script>
+        </span>
+      </div>
+      <div class="status-bar__column">
+        <span
+          class="material-symbols-outlined status-bar__material-symbols-outlined"
+        >
+          lock_reset
+        </span>
+
+        <span>110%</span>
+
+        <span
+          class="material-symbols-outlined status-bar__material-symbols-outlined"
+        >
+          battery_horiz_075
+        </span>
+
+        <span
+          class="material-symbols-outlined status-bar__material-symbols-outlined"
+        >
+          bolt
+        </span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="./friends.html"
+            ><span
+              class="material-symbols-outlined nav-bar__material-symbols-outlined activate"
+            >
+              person
+            </span></a
+          >
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#"
+            ><span
+              class="material-symbols-outlined nav-bar__material-symbols-outlined"
+            >
+              chat_bubble
+            </span></a
+          >
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#"
+            ><span
+              class="material-symbols-outlined nav-bar__material-symbols-outlined"
+            >
+              search
+            </span></a
+          >
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#"
+            ><span
+              class="material-symbols-outlined nav-bar__material-symbols-outlined"
+            >
+              more_horiz
+            </span></a
+          >
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
