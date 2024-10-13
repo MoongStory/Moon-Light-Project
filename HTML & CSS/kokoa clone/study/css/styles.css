@@ -4,8 +4,11 @@
 /* Reset */
 @import "./reset.css";
 
+@import "./variables.css";
+
 /* Components */
 @import "./components/status-bar.css";
+@import "./components/nav-bar.css";
 
 /* Screens */
 @import "./screens/login.css";
