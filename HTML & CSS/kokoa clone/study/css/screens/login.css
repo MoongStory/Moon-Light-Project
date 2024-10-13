@@ -32,7 +32,6 @@
   margin-bottom: 25px;
 }
 
-/* QUESTION : 왜 ".login-form__input" 이건 안되고 "input.login-form__input" 이렇게 해야 적용 되는지? */
 input.login-form__input {
   border-bottom: 3px solid rgba(0, 0, 0, 0.3);
   transition: border-color 0.3s ease-in-out;
