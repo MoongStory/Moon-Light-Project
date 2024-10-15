@@ -1,3 +1,7 @@
+/* DONT DELETE THIS */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* WRITE YOUR CODE BELOW */
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);
