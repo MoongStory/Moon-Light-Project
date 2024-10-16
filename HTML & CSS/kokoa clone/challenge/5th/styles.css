@@ -24,7 +24,7 @@ body * {
 body > div:first-child {
   background-color: white;
   width: 98%;
-  height: 100vh;
+  height: 98vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,6 +33,7 @@ body > div:first-child {
 
 /* region category */
 .category {
+  background-color: red;
   width: 90%;
   height: 10%;
   display: flex;
@@ -67,7 +68,26 @@ body > div:first-child {
 .music_info {
   width: 90%;
   height: 20%;
+  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+}
+
+.music_info div:first-child {
+  width: 120px;
+  height: 120px;
   background-color: orange;
+  margin: 0px 9px;
+  border-radius: 20%;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.music_info div:first-child span {
+  color: white;
+  font-size: 350%;
+  justify-content: center;
 }
 /* endregion music_info */
 
