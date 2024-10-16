@@ -33,7 +33,6 @@ body > div:first-child {
 
 /* region category */
 .category {
-  background-color: red;
   width: 90%;
   height: 10%;
   display: flex;
@@ -64,32 +63,48 @@ body > div:first-child {
 }
 /* endregion category */
 
-/* region music_info */
-.music_info {
+/* region music-info */
+.music-info {
   width: 90%;
   height: 20%;
-  background-color: cornflowerblue;
   display: flex;
   align-items: center;
 }
 
-.music_info div:first-child {
+.music-info div:first-child {
   width: 120px;
   height: 120px;
-  background-color: orange;
-  margin: 0px 9px;
+  background-color: #ffbd11;
+  margin-left: 9px;
+  margin-right: 15px;
   border-radius: 20%;
   border: 2px solid black;
   display: flex;
   align-items: center;
 }
 
-.music_info div:first-child span {
+.music-info div:first-child span {
   color: white;
   font-size: 350%;
   justify-content: center;
 }
-/* endregion music_info */
+
+.music-info div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.music-info__title {
+  font-weight: bold;
+  font-size: 250%;
+  margin-bottom: 5px;
+}
+
+.music-info__singer {
+  font-weight: bold;
+}
+/* endregion music-info */
 
 /* region buttons */
 .buttons {
@@ -99,10 +114,10 @@ body > div:first-child {
 }
 /* endregion buttons */
 
-/* region music_list */
-.music_list {
+/* region music-list */
+.music-list {
   width: 90%;
   height: 50%;
   background-color: green;
 }
-/* endregion music_list */
+/* endregion music-list */
