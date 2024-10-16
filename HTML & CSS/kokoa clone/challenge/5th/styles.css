@@ -109,7 +109,6 @@ body > div:first-child {
 .buttons {
   width: 90%;
   height: 15%;
-  background-color: yellow;
   display: flex;
   align-items: center;
 }
@@ -137,8 +136,7 @@ body > div:first-child {
 }
 
 .buttons button:nth-child(3) {
-  background-color: cyan;
-  width: 60px;
+  width: 70px;
   height: 60px;
   border-radius: 50%;
 }
