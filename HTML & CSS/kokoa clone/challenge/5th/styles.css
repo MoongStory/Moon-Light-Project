@@ -70,7 +70,7 @@ body > div:first-child {
   align-items: center;
 }
 
-.music-info div:first-child {
+.music-info__image {
   width: 120px;
   height: 120px;
   background-color: #ffbd11;
@@ -83,12 +83,12 @@ body > div:first-child {
   justify-content: center;
 }
 
-.music-info div:first-child span {
+.music-info__image span {
   color: white;
   font-size: 350%;
 }
 
-.music-info div:nth-child(2) {
+.music-info__title-singer {
   display: flex;
   flex-direction: column;
   width: 60%;
