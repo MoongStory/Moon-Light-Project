@@ -35,7 +35,6 @@ body > div:first-child {
 .category {
   width: 90%;
   height: 10%;
-  background-color: red;
   display: flex;
   align-items: center;
 }
