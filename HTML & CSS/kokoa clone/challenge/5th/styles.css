@@ -36,6 +36,8 @@ body > div:first-child {
   width: 90%;
   height: 200px;
   background-color: red;
+  display: flex;
+  align-items: center;
 }
 
 .category button {
