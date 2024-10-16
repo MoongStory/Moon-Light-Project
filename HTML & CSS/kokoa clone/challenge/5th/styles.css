@@ -111,6 +111,35 @@ body > div:first-child {
   width: 90%;
   height: 15%;
   background-color: yellow;
+  display: flex;
+  align-items: center;
+}
+
+.buttons button {
+  margin: 0px 20px;
+  border: 3px solid black;
+  border-width: 3px 3px 6px 3px;
+}
+
+.buttons button:nth-child(1) {
+  background-color: red;
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+}
+
+.buttons button:nth-child(2) {
+  background-color: lime;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.buttons button:nth-child(3) {
+  background-color: cyan;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 /* endregion buttons */
 
