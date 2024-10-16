@@ -40,6 +40,10 @@ body > div:first-child {
   align-items: center;
 }
 
+.category * {
+  width: 33%;
+}
+
 .category button {
   background: none;
   cursor: pointer;
@@ -52,6 +56,7 @@ body > div:first-child {
 
 .category label {
   font-size: 80px;
+  text-align: center;
 }
 /* endregion category */
 
