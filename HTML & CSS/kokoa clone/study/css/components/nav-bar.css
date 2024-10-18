@@ -2,6 +2,11 @@
   background-color: #f9f9fa;
   border: 1px solid #d9d9d9;
   padding: 15px 55px;
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .nav__list {
@@ -11,7 +16,7 @@
 
 .nav-bar__material-symbols-outlined {
   font-size: 35px;
-  color: black;
+  color: #2e363e;
 }
 
 .nav-bar__material-symbols-outlined.activate {
