@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   padding: 5px 3px;
+  /* QUESTION: position: fixed 속성을 지정하면서 block 속성이 사라져버렸는데 어떻게 해야 이 설정들을 유지하면서 자리도 차지하도록 수정할 수 있나??? */
   position: fixed;
   top: 0;
   width: 100%;
