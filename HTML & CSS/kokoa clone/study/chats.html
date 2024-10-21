@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Kokoa Clone</title>
+    <title>Chats - Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -56,13 +56,15 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icons">
         <span
           class="material-symbols-outlined screen-header__material-symbols-outlined"
         >
-          search </span
-        ><span
+          search
+        </span>
+        <span class="material-symbols-outlined"> add_comment </span>
+        <span
           class="material-symbols-outlined screen-header__material-symbols-outlined"
         >
           music_note </span
@@ -74,63 +76,23 @@
       </div>
     </header>
 
-    <a id="friends-display-link"
-      ><span
-        class="material-symbols-outlined material-symbols-outlined-info friends-display-link__material-symbols-outlined"
-      >
-        info
-      </span>
-      Friends' Names Display
-      <span
-        class="material-symbols-outlined material-symbols-outlined-chevron_right friends-display-link__material-symbols-outlined"
-      >
-        chevron_right
-      </span></a
-    >
-
     <main class="main-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
-            class="user-component__avatar user-component__avatar--large"
+            class="user-component__avatar user-component__avatar"
             src="https://img.freepik.com/premium-photo/teddy-bear-holding-empty-sign-message_1061358-37280.jpg"
           />
           <div class="user-component__text">
             <h4 class="user-component__title">Moonlight</h4>
-            <h6 class="user-component__subtitle">this text whatever</h6>
+            <h6 class="user-component__subtitle">
+              Please check my Kokoa Account Info
+            </h6>
           </div>
         </div>
-        <div class="user-component__column"></div>
-      </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <span
-            class="material-symbols-outlined material-symbols-outlined-keyboard_arrow_up friends-display-link__material-symbols-outlined"
-          >
-            keyboard_arrow_up
-          </span>
-        </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              class="user-component__avatar user-component__avatar--small"
-              src="https://img.freepik.com/premium-photo/teddy-bear-holding-empty-sign-message_1061358-37280.jpg"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
-            </div>
-          </div>
-          <div class="user-component__column">
-            <span>2</span>
-            <span
-              class="material-symbols-outlined material-symbols-outlined-chevron_right friends-display-link__material-symbols-outlined"
-            >
-              chevron_right
-            </span>
-          </div>
+        <div class="user-component__column display-column align-items-flex-end">
+          <span class="user-component__time">21:22</span>
+          <div class="badge">1</div>
         </div>
       </div>
     </main>
@@ -140,7 +102,7 @@
         <li class="nav__btn">
           <a class="nav__link" href="./friends.html"
             ><span
-              class="material-symbols-outlined nav-bar__material-symbols-outlined activate"
+              class="material-symbols-outlined nav-bar__material-symbols-outlined"
             >
               person
             </span></a
@@ -150,7 +112,7 @@
           <a class="nav__link" href="./chats.html"
             ><span class="nav__chat__notification badge">1</span>
             <span
-              class="material-symbols-outlined nav-bar__material-symbols-outlined"
+              class="material-symbols-outlined nav-bar__material-symbols-outlined activate"
             >
               chat_bubble
             </span></a
