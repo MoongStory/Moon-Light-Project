@@ -24,21 +24,11 @@
 }
 
 .nav-bar__material-symbols-outlined.activate {
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 24;
 }
 
 .nav__chat__notification {
   position: absolute;
   left: 15px;
   bottom: 17px;
-}
-
-.nav__more_horiz__notification {
-  background-color: tomato;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  position: absolute;
-  left: 30px;
-  bottom: 30px;
 }

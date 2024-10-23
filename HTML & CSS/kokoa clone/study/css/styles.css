@@ -16,6 +16,7 @@
 /* Screens */
 @import "./screens/login.css";
 @import "./screens/friends.css";
+@import "./screens/find.css";
 
 body {
   font-family: "Roboto";
@@ -33,4 +34,14 @@ body {
 
 .align-items-flex-end {
   align-items: flex-end;
+}
+
+.notification {
+  background-color: tomato;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
 }
